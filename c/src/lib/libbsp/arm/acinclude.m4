@@ -36,6 +36,8 @@ AC_DEFUN([RTEMS_CHECK_BSPDIR],
     AC_CONFIG_SUBDIRS([realview-pbx-a9]);;
   rtl22xx )
     AC_CONFIG_SUBDIRS([rtl22xx]);;
+  seerstm32f4 )
+    AC_CONFIG_SUBDIRS([seerstm32f4]);;
   smdk2410 )
     AC_CONFIG_SUBDIRS([smdk2410]);;
   stm32f4 )
