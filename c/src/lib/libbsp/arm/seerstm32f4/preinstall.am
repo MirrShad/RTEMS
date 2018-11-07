@@ -169,3 +169,139 @@ $(PROJECT_INCLUDE)/bsp/rcc.h: include/rcc.h $(PROJECT_INCLUDE)/bsp/$(dirstamp)
 	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/bsp/rcc.h
 PREINSTALL_FILES += $(PROJECT_INCLUDE)/bsp/rcc.h
 
+$(PROJECT_INCLUDE)/arm_common_tables.h: Libraries/CMSIS/inc/arm_common_tables.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/arm_common_tables.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/arm_common_tables.h
+
+$(PROJECT_INCLUDE)/arm_math.h: Libraries/CMSIS/inc/arm_math.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/arm_math.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/arm_math.h
+
+$(PROJECT_INCLUDE)/core_cm4.h: Libraries/CMSIS/inc/core_cm4.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/core_cm4.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/core_cm4.h
+
+$(PROJECT_INCLUDE)/core_cm4_simd.h: Libraries/CMSIS/inc/core_cm4_simd.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/core_cm4_simd.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/core_cm4_simd.h
+
+$(PROJECT_INCLUDE)/core_cmFunc.h: Libraries/CMSIS/inc/core_cmFunc.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/core_cmFunc.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/core_cmFunc.h
+
+$(PROJECT_INCLUDE)/core_cmInstr.h: Libraries/CMSIS/inc/core_cmInstr.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/core_cmInstr.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/core_cmInstr.h
+
+$(PROJECT_INCLUDE)/stm32f4xx.h: Libraries/CMSIS/inc/stm32f4xx.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx.h
+
+$(PROJECT_INCLUDE)/system_stm32f4xx.h: Libraries/CMSIS/inc/system_stm32f4xx.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/system_stm32f4xx.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/system_stm32f4xx.h
+
+$(PROJECT_INCLUDE)/misc.h: Libraries/FWlib/inc/misc.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/misc.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/misc.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_adc.h: Libraries/FWlib/inc/stm32f4xx_adc.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_adc.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_adc.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_can.h: Libraries/FWlib/inc/stm32f4xx_can.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_can.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_can.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_crc.h: Libraries/FWlib/inc/stm32f4xx_crc.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_crc.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_crc.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_cryp.h: Libraries/FWlib/inc/stm32f4xx_cryp.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_cryp.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_cryp.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_dac.h: Libraries/FWlib/inc/stm32f4xx_dac.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_dac.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_dac.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_dbgmcu.h: Libraries/FWlib/inc/stm32f4xx_dbgmcu.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_dbgmcu.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_dbgmcu.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_dcmi.h: Libraries/FWlib/inc/stm32f4xx_dcmi.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_dcmi.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_dcmi.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_dma.h: Libraries/FWlib/inc/stm32f4xx_dma.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_dma.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_dma.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_exti.h: Libraries/FWlib/inc/stm32f4xx_exti.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_exti.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_exti.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_flash.h: Libraries/FWlib/inc/stm32f4xx_flash.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_flash.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_flash.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_fsmc.h: Libraries/FWlib/inc/stm32f4xx_fsmc.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_fsmc.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_fsmc.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_gpio.h: Libraries/FWlib/inc/stm32f4xx_gpio.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_gpio.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_gpio.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_hash.h: Libraries/FWlib/inc/stm32f4xx_hash.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_hash.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_hash.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_i2c.h: Libraries/FWlib/inc/stm32f4xx_i2c.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_i2c.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_i2c.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_iwdg.h: Libraries/FWlib/inc/stm32f4xx_iwdg.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_iwdg.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_iwdg.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_pwr.h: Libraries/FWlib/inc/stm32f4xx_pwr.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_pwr.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_pwr.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_rcc.h: Libraries/FWlib/inc/stm32f4xx_rcc.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_rcc.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_rcc.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_rng.h: Libraries/FWlib/inc/stm32f4xx_rng.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_rng.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_rng.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_rtc.h: Libraries/FWlib/inc/stm32f4xx_rtc.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_rtc.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_rtc.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_sdio.h: Libraries/FWlib/inc/stm32f4xx_sdio.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_sdio.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_sdio.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_spi.h: Libraries/FWlib/inc/stm32f4xx_spi.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_spi.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_spi.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_syscfg.h: Libraries/FWlib/inc/stm32f4xx_syscfg.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_syscfg.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_syscfg.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_tim.h: Libraries/FWlib/inc/stm32f4xx_tim.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_tim.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_tim.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_usart.h: Libraries/FWlib/inc/stm32f4xx_usart.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_usart.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_usart.h
+
+$(PROJECT_INCLUDE)/stm32f4xx_wwdg.h: Libraries/FWlib/inc/stm32f4xx_wwdg.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_wwdg.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_wwdg.h
+

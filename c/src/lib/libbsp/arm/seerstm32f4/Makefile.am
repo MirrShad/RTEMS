@@ -64,6 +64,41 @@ include_bsp_HEADERS += include/stm32_usart.h
 include_bsp_HEADERS += include/io.h
 include_bsp_HEADERS += include/rcc.h
 
+include_HEADERS += Libraries/CMSIS/inc/arm_common_tables.h
+include_HEADERS += Libraries/CMSIS/inc/arm_math.h
+include_HEADERS += Libraries/CMSIS/inc/core_cm4.h
+include_HEADERS += Libraries/CMSIS/inc/core_cm4_simd.h
+include_HEADERS += Libraries/CMSIS/inc/core_cmFunc.h
+include_HEADERS += Libraries/CMSIS/inc/core_cmInstr.h
+include_HEADERS += Libraries/CMSIS/inc/stm32f4xx.h
+include_HEADERS += Libraries/CMSIS/inc/system_stm32f4xx.h
+
+include_HEADERS += Libraries/FWlib/inc/misc.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_adc.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_can.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_crc.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_cryp.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_dac.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_dbgmcu.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_dcmi.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_dma.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_exti.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_flash.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_fsmc.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_gpio.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_hash.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_i2c.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_iwdg.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_pwr.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_rcc.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_rng.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_rtc.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_sdio.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_spi.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_syscfg.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_tim.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_usart.h
+include_HEADERS += Libraries/FWlib/inc/stm32f4xx_wwdg.h
 ###############################################################################
 #                  LibBSP                                                     #
 ###############################################################################
@@ -132,6 +167,38 @@ libbsp_a_SOURCES += ../../../libcpu/shared/src/cache_manager.c
 libbsp_a_SOURCES += ../../../libcpu/arm/shared/cache/cache_.h
 libbsp_a_CPPFLAGS += -I$(srcdir)/../../../libcpu/arm/shared/include
 
+#Library
+libbsp_a_SOURCES += Libraries/FWlib/src/misc.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_adc.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_can.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_crc.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_cryp.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_cryp_aes.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_cryp_des.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_cryp_tdes.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_dac.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_dbgmcu.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_dcmi.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_dma.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_exti.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_flash.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_fsmc.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_gpio.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_hash.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_hash_md5.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_hash_sha1.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_i2c.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_iwdg.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_pwr.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_rcc.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_rng.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_rtc.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_sdio.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_spi.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_syscfg.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_tim.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_usart.c
+libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_wwdg.c
 ###############################################################################
 #                  Special Rules                                              #
 ###############################################################################
