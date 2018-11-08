@@ -169,6 +169,10 @@ $(PROJECT_INCLUDE)/bsp/rcc.h: include/rcc.h $(PROJECT_INCLUDE)/bsp/$(dirstamp)
 	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/bsp/rcc.h
 PREINSTALL_FILES += $(PROJECT_INCLUDE)/bsp/rcc.h
 
+$(PROJECT_INCLUDE)/stm32f4xx_conf.h: Libraries/stm32f4xx_conf.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_conf.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_conf.h
+
 $(PROJECT_INCLUDE)/arm_common_tables.h: Libraries/CMSIS/inc/arm_common_tables.h $(PROJECT_INCLUDE)/$(dirstamp)
 	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/arm_common_tables.h
 PREINSTALL_FILES += $(PROJECT_INCLUDE)/arm_common_tables.h
@@ -304,4 +308,8 @@ PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_usart.h
 $(PROJECT_INCLUDE)/stm32f4xx_wwdg.h: Libraries/FWlib/inc/stm32f4xx_wwdg.h $(PROJECT_INCLUDE)/$(dirstamp)
 	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/stm32f4xx_wwdg.h
 PREINSTALL_FILES += $(PROJECT_INCLUDE)/stm32f4xx_wwdg.h
+
+$(PROJECT_INCLUDE)/DIO.h: HAL/DIO.h $(PROJECT_INCLUDE)/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/DIO.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/DIO.h
 

@@ -20,6 +20,8 @@
 #include <assert.h>
 #include <bsp/stm32f4.h>
 
+#include <DIO.h>
+
 #ifdef STM32F4_FAMILY_F4XXXX
 
 #include <bsp/stm32f4xxxx_rcc.h>
@@ -297,7 +299,8 @@ void bsp_start( void )
 {
   init_main_osc();
 
-  stm32f4_gpio_set_config_array( &stm32f4_start_config_gpio[ 0 ] );
+  //stm32f4_gpio_set_config_array( &stm32f4_start_config_gpio[ 0 ] );
+  DIO_init();
 
   bsp_interrupt_initialize();
 }

@@ -64,6 +64,8 @@ include_bsp_HEADERS += include/stm32_usart.h
 include_bsp_HEADERS += include/io.h
 include_bsp_HEADERS += include/rcc.h
 
+include_HEADERS += Libraries/stm32f4xx_conf.h
+
 include_HEADERS += Libraries/CMSIS/inc/arm_common_tables.h
 include_HEADERS += Libraries/CMSIS/inc/arm_math.h
 include_HEADERS += Libraries/CMSIS/inc/core_cm4.h
@@ -99,6 +101,8 @@ include_HEADERS += Libraries/FWlib/inc/stm32f4xx_syscfg.h
 include_HEADERS += Libraries/FWlib/inc/stm32f4xx_tim.h
 include_HEADERS += Libraries/FWlib/inc/stm32f4xx_usart.h
 include_HEADERS += Libraries/FWlib/inc/stm32f4xx_wwdg.h
+
+include_HEADERS += HAL/DIO.h
 ###############################################################################
 #                  LibBSP                                                     #
 ###############################################################################
@@ -199,6 +203,9 @@ libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_syscfg.c
 libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_tim.c
 libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_usart.c
 libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_wwdg.c
+
+#HAL
+libbsp_a_SOURCES += HAL/DIO.c
 ###############################################################################
 #                  Special Rules                                              #
 ###############################################################################
