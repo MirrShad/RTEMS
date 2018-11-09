@@ -4,7 +4,7 @@
  */
 
 #include "stm32f4xx.h"
-#include "DIO.h"
+#include <DIO.h>
 
 void DIO_init( void )
 {
@@ -36,9 +36,7 @@ void DIO_init( void )
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10; 
   GPIO_Init(GPIOG, &GPIO_InitStructure);
 
-#ifdef USE_STDPERIPH_DRIVER 
   GPIO_SetBits(GPIOG,GPIO_Pin_9);
   GPIO_SetBits(GPIOG,GPIO_Pin_10);
-#endif
 }
 

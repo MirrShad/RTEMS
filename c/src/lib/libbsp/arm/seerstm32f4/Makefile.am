@@ -103,6 +103,7 @@ include_HEADERS += Libraries/FWlib/inc/stm32f4xx_usart.h
 include_HEADERS += Libraries/FWlib/inc/stm32f4xx_wwdg.h
 
 include_HEADERS += HAL/DIO.h
+include_HEADERS += HAL/CUART.h
 ###############################################################################
 #                  LibBSP                                                     #
 ###############################################################################
@@ -206,6 +207,7 @@ libbsp_a_SOURCES += Libraries/FWlib/src/stm32f4xx_wwdg.c
 
 #HAL
 libbsp_a_SOURCES += HAL/DIO.c
+libbsp_a_SOURCES += HAL/CUART.c
 ###############################################################################
 #                  Special Rules                                              #
 ###############################################################################

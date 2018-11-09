@@ -21,6 +21,7 @@
 #include <bsp/stm32f4.h>
 
 #include <DIO.h>
+#include <CUART.h>
 
 #ifdef STM32F4_FAMILY_F4XXXX
 
@@ -301,6 +302,7 @@ void bsp_start( void )
 
   //stm32f4_gpio_set_config_array( &stm32f4_start_config_gpio[ 0 ] );
   DIO_init();
+  UART_pin_config();
 
   bsp_interrupt_initialize();
 }
